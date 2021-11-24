@@ -19,7 +19,7 @@ class MyWidget(QMainWindow):
     def paintEvent(self, event):
         qp = QPainter()
         qp.begin(self)
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
         r1 = randint(10, 50)
         r2 = randint(10, 50)
         qp.drawEllipse(randint(50, 450), randint(50, 450), r1, r2)
